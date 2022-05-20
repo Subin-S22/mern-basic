@@ -1,0 +1,12 @@
+.header_flex {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.header_justifyContent_center {
+	justify-content: center;
+}
+
+.header_justifyContent_between {
+	justify-content: space-between;
+}

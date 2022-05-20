@@ -6,5 +6,5 @@ export const HEADER_LINKS = [
 
 export const HEADER_BUTTONS = [
   { name: "login", route: "login" },
-  { name: "sign up", router: "signup" },
+  { name: "sign up", route: "signup" },
 ];

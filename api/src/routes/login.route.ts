@@ -1,8 +1,8 @@
 import express from "express";
-import { profile } from "../controllers/profile.controller";
+import { login, auth } from "../controllers/login.controller";
 
 const routes = express.Router();
 
-routes.get("/", profile);
+routes.post("/", login);
 
 export default routes;

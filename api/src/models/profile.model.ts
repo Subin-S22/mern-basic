@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 
 //create a schema for the profile model
+/**
+ * profile schema - {   name:string,   email:string,   photo:Object  } */
 const profile = new mongoose.Schema({
   name: {
     type: String,
@@ -16,5 +18,5 @@ const profile = new mongoose.Schema({
   },
 });
 
-const Profile = mongoose.model("profile", profile);
+const Profile = mongoose.model("Profile", profile);
 export default Profile;

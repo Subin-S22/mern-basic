@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 
-export async function profile(req: Request, res: Response) {
+export async function profile(_: Request, res: Response) {
   new Promise((resolve) => {
-    res.json(req.body);
+    res.json({ success: "success" });
     resolve("success");
   });
 }

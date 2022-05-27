@@ -4,20 +4,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const profile = new mongoose_1.default.Schema({
-    name: {
-        type: String,
-        require: true,
-    },
+const login_1 = require("../validations/login");
+const Login = new mongoose_1.default.Schema({
     email: {
         type: String,
         required: true,
+        validate: [login_1.emailValidate, "Please fill the valid email address"],
     },
-    photo: {
-        type: Object,
+    password: {
+        type: String,
         required: true,
     },
 });
-const Profile = mongoose_1.default.model("Profile", profile);
-exports.default = Profile;
-//# sourceMappingURL=profile.model.js.map
+const LoginModel = mongoose_1.default.model("LoginModel", Login);
+exports.default = LoginModel;
+//# sourceMappingURL=login.model.js.map

@@ -1,12 +1,16 @@
-import express from "express";
+import express, { Application } from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-// import Profile from "./models/profile";
 dotenv.config({ path: ".env.local" });
 import Profile from "./routes/profile.route";
 import Login from "./routes/login.route";
-const app = express();
+import cors from "cors";
 
+const app: Application = express();
+//origin
+app.use(cors({ origin: "http://localhost:3333" }));
+
+//json
 app.use(express.json());
 app.use(
   express.urlencoded({

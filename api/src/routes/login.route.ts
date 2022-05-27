@@ -3,6 +3,6 @@ import { login, auth } from "../controllers/login.controller";
 
 const routes = express.Router();
 
-routes.post("/", login);
+routes.post("/", auth, login);
 
 export default routes;

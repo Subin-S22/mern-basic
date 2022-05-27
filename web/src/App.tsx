@@ -4,9 +4,10 @@ import HomePage from "./pages/homepage";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from "./pages/login";
 import { Navigate } from "react-router-dom";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 const App: React.FC = () => {
-  const isLogin = localStorage.getItem('login-status');
+  const { data: isLogin } = useLocalStorage('login-status')
   return (
     <div id="app">
       <BrowserRouter>

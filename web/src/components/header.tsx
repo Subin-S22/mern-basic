@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../../styles/header.module.css";
-import clsx from "../../utils/clsx";
-import Button from "../button/button";
-import Link from "../link/link";
+import styles from "../styles/header.module.css";
+import clsx from "../utils/clsx";
+import Button from "./button";
+import Link from "./link";
 import { HEADER_LINKS, HEADER_BUTTONS } from "src/global/headerLinks";
 import { useNavigate } from "react-router-dom";
 

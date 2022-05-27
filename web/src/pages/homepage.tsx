@@ -1,15 +1,13 @@
 import React from "react";
-import Layout from "src/modules/layout/layout";
-import Header from "../modules/header/header";
-import ProfileItem from "src/modules/profile/profileItem";
+import ui from '../components'
 
 const HomePage: React.FC = () => {
 	return (
 		<div>
-			<Header />
-			<Layout>
-				<ProfileItem />
-			</Layout>
+			<ui.header />
+			<ui.layout>
+				<ui.profileItem />
+			</ui.layout>
 		</div>
 	);
 };

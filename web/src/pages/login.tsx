@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import Button from 'src/modules/button/button'
+import Button from 'src/components/button'
 import styles from '../styles/login.module.css'
 import clsx from 'src/utils/clsx'
 import { FieldProp } from 'src/types/login'

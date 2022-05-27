@@ -1,5 +1,5 @@
 import React from "react";
-import { linkType, singleLink } from "../../types/link";
+import { linkType, singleLink } from "../types/link";
 
 const Link: React.FC<linkType> = ({ links, navigate }) => {
 	return (
